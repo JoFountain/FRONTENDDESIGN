@@ -113,16 +113,16 @@ h1, h2, h3, h4, h5, h6 {
         height: 700px;
     }
     .card_1 {
-        @include bg_img('Jo Portfolio/Images/design_resources.svg', 105%, 200px 30px)
+        @include bg_img('..Images/design_resources.svg', 105%, 200px 30px)
     }
     .card_2 {
-        @include bg_img('Jo Portfolio/Images/design_for_devs.svg', 125%, -170px -205px)
+        @include bg_img('..Images/design_for_devs.svg', 125%, -170px -205px)
     }
     .card_3 {
-        @include bg_img('Jo Portfolio/Images/lol_colours.svg', 150%, 40px 160px)
+        @include bg_img('..Images/lol_colours.svg', 150%, 40px 160px)
     }
     .card_4 {
-        @include bg_img('Jo Portfolio/Images/seework.svg', 120%, 150px -160px)
+        @include bg_img('..Images/seework.svg', 120%, 150px -160px)
     }
 
     .pink, .green, .purple, .blue {
