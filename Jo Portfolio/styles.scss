@@ -112,22 +112,23 @@ h1, h2, h3, h4, h5, h6 {
     .tall {
         height: 700px;
     }
+
+  
+     }
     .card_1 {
-        @include bg_img('..Images/design_resources.svg', 105%, 200px 30px)
+        @include bg_img('../Images/design_for_devs.svg', 80%, 280px 20px)
     }
     .card_2 {
-        @include bg_img('..Images/design_for_devs.svg', 125%, -170px -205px)
+        @include bg_img('../Images/design_resources.svg', 125%, -170px -205px)
     }
     .card_3 {
-        @include bg_img('..Images/lol_colours.svg', 150%, 40px 160px)
+        @include bg_img('../Images/lol_colours.svg', 150%, 40px 160px)
     }
     .card_4 {
-        @include bg_img('..Images/seework.svg', 120%, 150px -160px)
+        @include bg_img('../Images/seework.svg', 120%, 150px -160px)
     }
 
-    .pink, .green, .purple, .blue {
-        border-radius: .35em;
-     }
+   
     
     .card_inner {
         display: table-cell;
@@ -146,27 +147,30 @@ h1, h2, h3, h4, h5, h6 {
         }
      }
 
-    
+     .pink, .green, .purple, .blue {
+        border-radius: .35em;}
+
+
      .pink {
         background: rgba(230, 56, 222, .6);  
-        border-radius: .35em;
+    
     }
 
     .green {
         background: rgba(80, 218, 93, .6);
-        border-radius: .35em;
+        
     }
 
     .purple {
         background: rgba(145, 89, 219, .6);
-        border-radius: .35em;
+
     }
 
     .blue {
         background: rgba(131, 226, 245, .6);
-        border-radius: .35em;
-    }
 
+    }
+     
     .view_more {
         width: 25%;
         float: left;
@@ -185,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
                 p {
                     color: $pink;
                 }
-            }
+            
     }
 }
 }
