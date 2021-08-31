@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
   padding: 5em 0;
+  height: 500px;
 }
 .banner .logo {
   float: left;
@@ -42,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  background: #cc66cc;
+  background: #c007c0;
   border-radius: 100%;
   width: 75px;
   height: 75px;
@@ -67,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .work {
   background: #333333;
-  padding: 5em 0em;
+  padding: 5em 0;
 }
 .work .card {
   background: white;
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 .work .card_third {
-  width: 70%;
+  width: 60%;
   float: left;
 }
 .work .left {
@@ -96,27 +97,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 700px;
 }
 .work .card_1 {
-  background-image: url("Jo Portfolio/Images/design_resources.svg");
-  background-size: 105%;
-  background-position: 200px 30px;
+  background-image: url("Images/image1.svg");
+  background-size: 80%;
+  background-position: 280px 20px;
 }
 .work .card_2 {
-  background-image: url("Jo Portfolio/Images/design_for_devs.svg");
+  background-image: url("Images/image2.svg");
   background-size: 125%;
   background-position: -170px -205px;
 }
 .work .card_3 {
-  background-image: url("Jo Portfolio/Images/lol_colours.svg");
+  background-image: url("Images/image3.svg");
   background-size: 150%;
   background-position: 40px 160px;
 }
 .work .card_4 {
-  background-image: url("Jo Portfolio/Images/seework.svg");
+  background-image: url("Images/image4.svg");
   background-size: 120%;
   background-position: 150px -160px;
-}
-.work .pink, .work .green, .work .purple, .work .blue {
-  border-radius: 0.35em;
 }
 .work .card_inner {
   display: table-cell;
@@ -134,21 +132,20 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 4em;
   margin: 0;
 }
+.work .pink, .work .green, .work .purple, .work .blue {
+  border-radius: 0.35em;
+}
 .work .pink {
   background: rgba(230, 56, 222, 0.6);
-  border-radius: 0.35em;
 }
 .work .green {
   background: rgba(80, 218, 93, 0.6);
-  border-radius: 0.35em;
 }
 .work .purple {
   background: rgba(145, 89, 219, 0.6);
-  border-radius: 0.35em;
 }
 .work .blue {
   background: rgba(131, 226, 245, 0.6);
-  border-radius: 0.35em;
 }
 .work .view_more {
   width: 25%;
@@ -167,5 +164,41 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .work .view_more a:hover p {
-  color: #cc66cc;
+  color: #c007c0;
+}
+
+footer {
+  padding: 3em 0;
+}
+footer .logo {
+  float: left;
+  margin: 0;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+}
+footer ul li {
+  display: inline;
+  float: left;
+  margin-left: 4em;
+}
+footer ul li .title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75em;
+  display: block;
+  padding-bottom: 0.5em;
+}
+footer ul li .links {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.75em;
+}
+footer ul li .links a {
+  color: #333333;
+  text-decoration: none;
+}
+footer ul li .links a:hover {
+  color: #c007c0;
 }

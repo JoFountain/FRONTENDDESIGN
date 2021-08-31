@@ -1,5 +1,6 @@
-$a: green; 
-$pink:hsl(300, 50%, 60%);
+// Variables//
+$a: rgb(1, 148, 1); 
+$pink:hsl(300, 93%, 39%);
 $white:hsl(0, 0%, 100%);
 $grey:hsl(0, 0%, 20%);
 
@@ -37,11 +38,14 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
+// logo outside of banner so that you can use it seperately in the footer//
 .banner {
     padding: 5em 0;
+    height: 500px;
     .logo {
         float: left;
     }
+    //font weight already set above in h1, h2, h3, h4, h5, h6//
     h1 {
         color: $grey;
         text-align: right;
@@ -51,11 +55,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+
 .logo {
     background: $pink;
     border-radius: 100%;
     width: 75px;
     height: 75px;
+    // line-height 70 makes it central to the circle//
     line-height: 70px;
     text-align: center;
     color: $white;
@@ -77,27 +84,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .work {
     background: $grey;
-    padding: 5em 0em;
-    
-
-    .card {
+    padding: 5em 0;
+        .card {
         background: $white;
         border-radius: .35em;
         height: 450px;
         display: table;
+    }
           
-    }
-    .card_full {
+        .card_full {
         width: 100%;
-    }
+        }
 
-    .card_half {
+        .card_half {
         width: 48%;
         float: left;
     }
 
-    .card_third {
-        width: 70%;
+        .card_third {
+        width: 60%;
         float: left;
     }
 
@@ -111,25 +116,22 @@ h1, h2, h3, h4, h5, h6 {
 
     .tall {
         height: 700px;
-    }
-
-  
-     }
+   
+}
+     
     .card_1 {
-        @include bg_img('../Images/design_for_devs.svg', 80%, 280px 20px)
+        @include bg_img('Images/image1.svg', 80%, 280px 20px)
     }
     .card_2 {
-        @include bg_img('../Images/design_resources.svg', 125%, -170px -205px)
+        @include bg_img('Images/image2.svg', 125%, -170px -205px)
     }
     .card_3 {
-        @include bg_img('../Images/lol_colours.svg', 150%, 40px 160px)
+        @include bg_img('Images/image3.svg', 150%, 40px 160px)
     }
     .card_4 {
-        @include bg_img('../Images/seework.svg', 120%, 150px -160px)
+        @include bg_img('Images/image4.svg', 120%, 150px -160px)
     }
 
-   
-    
     .card_inner {
         display: table-cell;
         vertical-align: middle;
@@ -145,51 +147,88 @@ h1, h2, h3, h4, h5, h6 {
             font-size: 4em;
             margin:0;
         }
-     }
+    }
 
-     .pink, .green, .purple, .blue {
+        .pink, .green, .purple, .blue {
         border-radius: .35em;}
 
 
-     .pink {
+        .pink {
         background: rgba(230, 56, 222, .6);  
     
     }
 
-    .green {
+        .green {
         background: rgba(80, 218, 93, .6);
         
     }
 
-    .purple {
+        .purple {
         background: rgba(145, 89, 219, .6);
 
     }
 
-    .blue {
+        .blue {
         background: rgba(131, 226, 245, .6);
 
     }
      
-    .view_more {
+        .view_more {
         width: 25%;
         float: left;
         height: 450px;
         padding-left: 3em;
-        p {
+            p {
             font-size: 1.25em;
             font-weight: 700;
             line-height: 450px;
             margin: 0;
             color: rgba(80, 218, 93, .6);
-        }
+            }
 
-        a {text-decoration: none;
+            a {
+                text-decoration: none;
             &:hover {
                 p {
                     color: $pink;
                 }
             
-    }
+            }
+        }
+    }        
 }
+
+footer {
+    padding: 3em 0;
+    .logo {
+        float: left;
+        margin: 0;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-top: 1em;
+        li {
+            display: inline;
+            float: left;
+            margin-left: 4em;
+            .title {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: .75em;
+                display: block;
+                padding-bottom: .5em;
+            }
+            .links {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1.75em;
+                a {
+                    color:$grey;
+                    text-decoration: none;
+                    &:hover {color: $pink;
+                    }
+                }
+            }
+        }
+    }
 }
